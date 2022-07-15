@@ -1,8 +1,8 @@
-import { useStytch } from "@stytch/stytch-react";
+import { useStytchLazy } from "@stytch/stytch-react";
 import styles from "../styles/Home.module.css";
 
 export default function Sample() {
-  const stytchClient = useStytch();
+  const stytchClient = useStytchLazy();
 
   return (
     <div className={styles.container}>

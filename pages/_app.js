@@ -9,10 +9,6 @@ const stytch = initStytch(
 function MyApp({ Component, pageProps }) {
   return (
     <>
-      <Script
-        src={"https://js.stytch.com/stytch.js"}
-        strategy="beforeInteractive"
-      />
       <StytchProvider stytch={stytch}>
         <Component {...pageProps} />
       </StytchProvider>
