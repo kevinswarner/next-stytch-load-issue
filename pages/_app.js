@@ -1,4 +1,5 @@
 import { StytchProvider, initStytch } from "@stytch/stytch-react";
+import withNoSSR from "../lib/with-no-ssr.js";
 import "../styles/globals.css";
 
 const stytch = initStytch(
@@ -15,4 +16,4 @@ function MyApp({ Component, pageProps }) {
   );
 }
 
-export default MyApp;
+export default withNoSSR(MyApp);
